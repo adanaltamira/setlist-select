@@ -1,0 +1,123 @@
+.rainbow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.rainbow {
+  display: flex;
+  width: 50px;
+  height: 100vh;
+}
+
+.rainbow-stripe {
+  width: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Base colors */
+.rainbow-stripe:nth-child(1) {
+  background-color: #EF0000;
+}
+
+.rainbow-stripe:nth-child(2) {
+  background-color: #FF621D;
+}
+
+.rainbow-stripe:nth-child(3) {
+  background-color: #FEC611;
+}
+
+.rainbow-stripe:nth-child(4) {
+  background-color: #0FA52A;
+}
+
+.rainbow-stripe:nth-child(5) {
+  background-color: #003ADA;
+}
+
+/* Highlight Rainbow specific styles */
+.highlight-rainbow .rainbow-stripe {
+  cursor: pointer;
+  position: relative;
+}
+
+.highlight-rainbow .rainbow-stripe:focus {
+  outline: 2px solid white;
+  outline-offset: -2px;
+}
+
+.highlight-rainbow .rainbow-stripe.highlighted {
+  transform: scaleX(1.5);
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.color-info {
+  font-size: 1rem;
+  color: #e1e1e1;
+  text-align: center;
+  min-height: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Animated Rainbow */
+.animated-rainbow .animated-stripe {
+  animation: colorPulse 2s infinite;
+}
+
+.animated-rainbow .animated-stripe:nth-child(1) {
+  animation-name: redPulse;
+  animation-delay: 0s;
+}
+
+.animated-rainbow .animated-stripe:nth-child(2) {
+  animation-name: orangePulse;
+  animation-delay: 0.4s;
+}
+
+.animated-rainbow .animated-stripe:nth-child(3) {
+  animation-name: yellowPulse;
+  animation-delay: 0.8s;
+}
+
+.animated-rainbow .animated-stripe:nth-child(4) {
+  animation-name: greenPulse;
+  animation-delay: 1.2s;
+}
+
+.animated-rainbow .animated-stripe:nth-child(5) {
+  animation-name: bluePulse;
+  animation-delay: 1.6s;
+}
+
+@keyframes redPulse {
+  0%, 100% { background-color: #EF0000; }
+  50% { background-color: #FF3333; }
+}
+
+@keyframes orangePulse {
+  0%, 100% { background-color: #FF621D; }
+  50% { background-color: #FF8F4D; }
+}
+
+@keyframes yellowPulse {
+  0%, 100% { background-color: #FEC611; }
+  50% { background-color: #FFD644; }
+}
+
+@keyframes greenPulse {
+  0%, 100% { background-color: #0FA52A; }
+  50% { background-color: #15D437; }
+}
+
+@keyframes bluePulse {
+  0%, 100% { background-color: #003ADA; }
+  50% { background-color: #1E5FFF; }
+}
+
+
+/*# sourceMappingURL=stories-Rainbow-stories.2b93f2c3.chunk.css.map*/
