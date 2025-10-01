@@ -1,0 +1,97 @@
+.checkbox-list-form {
+  margin: 0 auto;
+}
+
+.checkbox-list {
+  margin-bottom: 35px;
+  overflow-y: auto;
+}
+
+.list-item-container {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 0;
+  transition: background-color 0.2s ease;
+}
+
+.list-item-container:nth-child(odd) {
+  background-color: #000;
+}
+
+.list-item-container:nth-child(even) {
+  background-color: #201D26;
+}
+
+.list-item-container:hover {
+  background-color: #322F38;
+}
+
+.list-item-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+  display: none;
+}
+
+.list-item-label {
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  color: #e1e1e1;
+}
+
+/* Focus styles for accessibility */
+.list-item-checkbox:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* Selected state */
+.list-item-checkbox:checked + .list-item-label {
+  color: #4CAF50;
+  font-weight: bolder;
+}
+
+.submit-button {
+  background-color: #45a049;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.submit-button:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* Keyboard focus styles */
+.submit-button:focus-visible {
+  outline: 3px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .checkbox-list {
+    border: 1px solid CanvasText;
+  }
+  
+  .submit-button {
+    border: 1px solid ButtonText;
+  }
+
+  .list-item-checkbox:checked + .list-item-label {
+    font-weight: bold;
+  }
+}

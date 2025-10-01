@@ -1,0 +1,45 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  margin: 4px 0;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.list-item:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.list-item-checkbox {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.list-item-label {
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Focus styles for accessibility */
+.list-item-checkbox:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* Selected state */
+.list-item-checkbox:checked + .list-item-label {
+  color: #4CAF50;
+  font-weight: 500;
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+  .list-item-checkbox:checked + .list-item-label {
+    font-weight: bold;
+  }
+}

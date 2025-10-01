@@ -1,0 +1,119 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: black;
+  color: white;
+
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 100%;
+  min-height: 100%;
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.06rem;
+  line-height: calc(1 + 0.8 / var(--font-body-scale));
+}
+
+.main-wrap {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.main-content {
+    flex-grow: 1;
+   display: flex;
+    align-items: center;
+    justify-content: center;
+  flex-direction:column;
+  position: relative;
+}
+
+.storybook-page {
+  margin: 0 auto;
+  padding: 48px 20px;
+  max-width: 600px;
+  color: #e1e1e1;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.storybook-page h2 {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 4px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.checkbox-section {
+  margin: 40px 0;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.checkbox-section h3 {
+  margin-bottom: 16px;
+  color: #e1e1e1;
+}
+
+.storybook-page p {
+  margin: 1em 0;
+}
+
+.storybook-page a {
+  color: inherit;
+}
+
+.storybook-page ul {
+  margin: 1em 0;
+  padding-left: 30px;
+}
+
+.storybook-page li {
+  margin-bottom: 8px;
+}
+
+.storybook-page .tip {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  border-radius: 1em;
+  background: #e7fdd8;
+  padding: 4px 12px;
+  color: #357a14;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 12px;
+}
+
+.storybook-page .tip-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.storybook-page .tip-wrapper svg {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3px;
+  margin-right: 4px;
+  width: 12px;
+  height: 12px;
+}
+
+.storybook-page .tip-wrapper svg path {
+  fill: #1ea7fd;
+}
