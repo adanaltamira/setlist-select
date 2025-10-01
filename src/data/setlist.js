@@ -1,6 +1,5 @@
 export const setlist = [
   "H3@RT$ W3RE M3@NT T0 F7Y",
-  "Transition Speech - Phones and Miss Hap",
   "SURVIVE",
   "CRUISIN",
   "WORST GUYS",
