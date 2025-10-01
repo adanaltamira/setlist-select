@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import './CheckboxList.css';
+import { setlist } from '../data/setlist';
 
 const CheckboxList = () => {
-  // Generate 20 items
-  const initialItems = Array.from({ length: 20 }, (_, index) => ({
-    id: `item-${index + 1}`,
-    label: `Item ${index + 1}`,
+  const initialItems = setlist.map((song, index) => ({
+    id: `song-${index + 1}`,
+    label: song,
     isSelected: false,
   }));
 
