@@ -269,7 +269,7 @@ header {
 }
 
 .submit-button {
-  background-color: #45a049;
+  background-color: #f5361b;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -280,18 +280,23 @@ header {
 }
 
 .submit-button:hover {
-  background-color: #45a049;
+  background-color: #de5831;
 }
 
 .submit-button:focus {
-  outline: 2px solid #4CAF50;
+  outline: 2px solid #f5361b;
   outline-offset: 2px;
 }
 
 /* Keyboard focus styles */
 .submit-button:focus-visible {
-  outline: 3px solid #4CAF50;
+  outline: 3px solid #f5361b;
   outline-offset: 2px;
+}
+
+.submit-button .icon {
+  width: 1rem;
+  padding-left: 10px;
 }
 
 /* High contrast mode support */
@@ -444,4 +449,4 @@ footer img {
   height: 50px;
 }
 
-/*# sourceMappingURL=stories-Page-stories.01ee004a.chunk.css.map*/
+/*# sourceMappingURL=stories-Page-stories.bd49ceb9.chunk.css.map*/
