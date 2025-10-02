@@ -25,6 +25,12 @@ export const Page = () => {
             <h3>Your favorites</h3>
             <CheckboxList />
           </div>
+        <footer>
+          <div>
+            <img src="./assets/logo.png" alt="Logo" />
+          </div>
+          Copyright | Privacy Policy
+        </footer>
         </section>
       </article>
       <AnimatedRainbow />

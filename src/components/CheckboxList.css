@@ -5,6 +5,16 @@
 .checkbox-list {
   margin-bottom: 35px;
   overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+@media (min-width: 880px) {
+  .checkbox-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+  }
 }
 
 .list-item-container {
@@ -21,6 +31,18 @@
 
 .list-item-container:nth-child(even) {
   background-color: #201D26;
+}
+
+@media (min-width: 880px) {
+  .list-item-container:nth-child(4n-3),
+  .list-item-container:nth-child(4n-2) {
+    background-color: #000;
+  }
+
+  .list-item-container:nth-child(4n-1),
+  .list-item-container:nth-child(4n) {
+    background-color: #201D26;
+  }
 }
 
 .list-item-container:hover {
