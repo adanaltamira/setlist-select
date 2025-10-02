@@ -3,6 +3,7 @@ import React from 'react';
 import { Header } from './Header';
 import { AnimatedRainbow } from '../components/AnimatedRainbow';
 import CheckboxList from '../components/CheckboxList';
+import logo from './assets/logo.png';
 import './page.css';
 
 export const Page = () => {
@@ -27,7 +28,7 @@ export const Page = () => {
           </div>
         <footer>
           <div>
-            <img src="./assets/logo.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
           </div>
           Copyright | Privacy Policy
         </footer>
