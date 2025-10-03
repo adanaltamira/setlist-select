@@ -73,7 +73,7 @@
 
 /* Selected state */
 .list-item-checkbox:checked + .list-item-label {
-  color: #4CAF50;
+  color: #de5831;
   font-weight: bolder;
 }
 

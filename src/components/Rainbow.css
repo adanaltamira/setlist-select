@@ -8,12 +8,17 @@
 .rainbow {
   display: flex;
   width: 50px;
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
 }
 
 .rainbow-stripe {
   width: 10px;
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 /* Base colors */
